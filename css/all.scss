@@ -146,10 +146,28 @@ body{
 
 .slick-prev{
     left:25px;
+    @include background("left-chevron.svg");
+
+    &:hover{
+        @include background("left-chevron.svg");
+    }
+
+    &:before{
+        content:none;
+    }
 }
 
 .slick-next{
     right:25px;
+    @include background("right-chevron.svg",right);
+
+    &:hover{
+        @include background("right-chevron.svg",right);
+    }
+
+    &:before{
+        content:none;
+    }
 }
 
 .container{
@@ -335,6 +353,11 @@ body{
 
     .icon-media{
         float: right;
+
+        img{
+            width:16px;
+            height:16px;
+        }
     }
     .foot-copy{
         font-size:10px;
@@ -345,14 +368,36 @@ body{
     }
 }
 
+.hamburger{
+    display: none;
+}
+
 @media only screen and (max-width: 1280px) {
     .wrapper-container,.container{
         padding:0 20px;
     }
 
     #header{
-        nav{
+        #navigation{
             display: none;
+            position: absolute;
+            z-index: 10;
+            background: $bg-color;
+            right: 0;
+            top: 84px;
+            width: 100%;
+
+            &.open{
+                display:block;
+            }
+
+            li{
+                display: block;
+                
+                a{
+                    padding:10px 15px 10px 0;
+                }
+            }
         }
     }
     .grid-2,.grid-3,.grid-4{
@@ -362,5 +407,46 @@ body{
     .button{
         padding-left:10px;
         padding-right:10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper-container,.container{
+        padding:20px 20px;
+    }
+    
+    .hamburger{
+        display:inline-block;
+        color:white;
+        padding:15px 15px 15px 15px;
+    }
+
+    .logo{
+        height:50px;
+    }
+
+    .slider{
+        height:100vh;
+
+        img{
+            height:100vh;
+        }
+
+        .heading-2{
+            font-size:30px;
+            padding:0 30px;
+            width:70%;
+        }
+    }
+
+    .slick-prev{
+        left:10px;
+    }
+    .slick-next{
+        right:10px;
+    }
+
+    #header .wrapper-container{
+        padding-bottom:0;
     }
 }

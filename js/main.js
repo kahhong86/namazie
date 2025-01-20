@@ -7,5 +7,9 @@ $(document).ready(function(){
     });
     const d = new Date();
     let year = d.getFullYear();
-    $('#year').append(year);
+    $("#year").append(year);
+
+    $(".hamburger").on("click",function(){
+        $("#navigation").toggleClass("open");
+    })
 });
