@@ -4,27 +4,33 @@
 $bg-color:#333399;
 $brown:#ad7721;
 $darkblue:#111134;
+$button:#1e1e59;
 
 .wrapper-container{
     margin:0 auto;
-    max-width: 1280px;
+    max-width: 1140px;
 }
 
 .heading-2{
     font-size:30px;
     line-height: 48px;
     text-transform: uppercase;    
+    font-family: "Lato";
 
     &.brown{
         color:$brown;
     }
 }
 
+.wrapper{
+    padding-bottom:100px;
+}
+
 p{
     margin:0 0 20px;
 
     strong{
-        font-family: "Avenir-Black";
+        font-family: "Lato";
     }
 }
 
@@ -50,6 +56,8 @@ a{
     
     .wrapper-container{
         display: flex;
+        max-width: none;
+        padding:0 30px;
     }
 
     .logo{
@@ -119,22 +127,38 @@ body{
     font-size:0;
 }
 
+
+.gallery{
+    .wrapper-container{
+        max-width: none;
+        padding:0 15px;
+    }
+}
+
 .slider {
     width: 100%;
     margin: 0px auto;
     padding-bottom:50px;
+    height:80vh;
+    overflow: hidden;
 
     .heading-2{
         color:white;
         position: absolute;
-        top: 50%;
+        top: 37vh;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         font-size:50px;
         margin:20px 0;
-        font-weight: 100;
+        font-weight: 500;
         width:100%;
+        z-index: 1;
+        text-transform: capitalize;
+    }
+
+    .slick-list{
+        height:75vh;
     }
 }
 
@@ -143,12 +167,17 @@ body{
 
     img{
         margin:0 auto;
+        opacity:0.5
     }
     div{
         div{
             position: relative;
         }
     }
+}
+
+.slick-initialized .slick-slide {
+    overflow: hidden;
 }
 
 .slick-prev, .slick-next{
@@ -272,11 +301,12 @@ body{
     font-size:17px;
     line-height: 26px;
     color:white;
-    background-color: $bg-color;
+    background-color: $button;
     border-radius: 25px;
     padding:17px 70px 13px;
     text-decoration: none;
     text-transform: uppercase;
+    display: inline-block;
 
     &:hover{
         text-decoration: none;
@@ -329,8 +359,9 @@ body{
 
 .subscribe{
     .heading-2{
-        font-size:26p;
+        font-size:30px;
         line-height: 30px;
+        margin-bottom:20px;
     }
     p{
         font-size:22px;
@@ -353,7 +384,9 @@ body{
 #footer{
     background-color: $bg-color;
     color:white;
-    position: relative;
+    position: fixed;
+    bottom:0;
+    width:100%;
     padding:20px 0;
 
     .copyright{
@@ -392,7 +425,7 @@ body{
 
 @media only screen and (max-width: 1280px) {
     .wrapper-container,.container{
-        padding:0 20px;
+        padding:20px 20px;
     }
 
     #header{
@@ -444,7 +477,7 @@ body{
     }
 
     .slider{
-        height:100vh;
+        height:80vh;
 
         img{
             height:100vh;
@@ -477,7 +510,7 @@ body{
 
 .title-heading{
     font-size:24px;
-    font-family:"Avenir";
+    font-family:"Lato";
     color:$bg-color;
     text-transform: uppercase;
     margin:30px 0;
@@ -488,26 +521,27 @@ body{
 }
 
 .title-eyebrow{
-    font-size:14px;
+    font-size:17px;
     color:$brown;
     text-transform: uppercase;
     border:2px solid $brown;
     padding:10px 20px;
     display: inline-block;
     margin:50px 0 50px;
-    font-family: "Avenir-Black";
+    font-family: "Lato";
+    font-weight: bold;
 }
 
 .title-item{
     font-size:14px;
     color:$darkblue;
-    font-family: "Avenir-Black";
+    font-family: "Lato";
     text-transform: uppercase;
 }
 
 .title-alt{
     font-size:24px;
-    font-family: "Avenir-Book";
+    font-family: "Lato";
     text-transform: uppercase;
     color:$bg-color;
     border-bottom:3px solid $bg-color;
@@ -516,12 +550,12 @@ body{
 .title-sub{
     font-size:20px;
     padding-bottom:10px;
-    font-family: "Avenir-Book";
+    font-family: "Lato";
     border-bottom:1px solid $brown;
 }
 .title-name{
     color:$bg-color;
-    font-family: "Avenir-Book";
+    font-family: "Lato";
     margin:0 0 20px;
     font-size:20px;
 }
@@ -548,13 +582,69 @@ button{
 
 /*Areas of practice starts*/
 .gallery-image{
-    max-width:1280px;
+    border-bottom: 15px solid $bg-color;
+    max-width: none;
     line-height: 0;
-    padding-bottom:50px;
-    position:relative;
+    padding-bottom: 50px;
+    height: calc(100vh - 247px);
+    overflow: hidden;
+    padding-bottom: 20px;
 
     img{
         width:100%; 
+    }
+
+    .hero-tagline{
+        border: 3px solid #ffffff;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: 2px;
+        margin-top: 100px;
+        padding: 20px 40px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 50%;
+        margin-left: -260px;
+        top: calc(50vh - 100px);
+
+        &.contact-us{
+            margin-left: -220px;
+        }
+
+        span{
+            color:$bg-color;
+        }
+    
+    }
+    @media only screen and (max-width: 1280px) {
+        .hero-tagline{
+            font-size:10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-image{
+        height:auto;
+        position: relative;
+        padding-bottom:0;
+
+        .hero-tagline{
+            font-size: 11px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            top: 0;
+            left: 0;
+            margin-left: 3vw;
+            width: calc(100vw - 75px);
+        }
+
+        .bounce{
+            bottom:10px;
+        }
     }
 }
 
@@ -610,8 +700,9 @@ button{
     @include background("down-chevron.svg");
     display: block;
     position: absolute;
-    bottom: 60px;
+    bottom: 105px;
     left: 50%;
+    margin-left:-10px;
 }
 /*Areas of practice ends*/
 
@@ -711,7 +802,7 @@ form{
         }
         input{
             width:75%;
-            font-family: "Avenir";
+            font-family: "Lato";
             font-size:18px;
             padding:5px;
         }

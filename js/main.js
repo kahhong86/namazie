@@ -19,19 +19,19 @@ $(document).ready(function(){
             <a href="areas-of-practice.html">Areas of practice</a>
         </li>
         <li>
-            <a href="#">IP showcase</a>
+            <a href="ip-showcase.html">IP showcase</a>
         </li>
         <li>
             <a href="#">Accolades</a>
         </li>
         <li>
-            <a href="#">Publications</a>
+            <a href="publications.html">Publications</a>
         </li>
         <li>
-            <a href="#">About Us</a>
+            <a href="about-us.html">About Us</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a href="contact-us.html">Contact</a>
         </li>
     </ul>`
 
