@@ -6,6 +6,17 @@ $brown:#ad7721;
 $darkblue:#111134;
 $button:#1e1e59;
 
+html{
+    background-color: $bg-color;
+    padding:0 15px; 
+}
+
+@media only screen and (max-width: 480px) {
+    html{
+        padding:0;
+    }
+}
+
 .wrapper-container{
     margin:0 auto;
     max-width: 1140px;
@@ -57,7 +68,7 @@ a{
     .wrapper-container{
         display: flex;
         max-width: none;
-        padding:0 30px;
+        padding:0 15px;
     }
 
     .logo{
@@ -131,7 +142,6 @@ body{
 .gallery{
     .wrapper-container{
         max-width: none;
-        padding:0 15px;
     }
 }
 
