@@ -32,6 +32,11 @@ html{
         color:$brown;
     }
 }
+@media only screen and (max-width: 480px) {
+    .heading-2{
+        line-height: 38px;
+    }
+}
 
 .wrapper{
     padding-bottom:100px;
@@ -127,7 +132,6 @@ body{
     font-family: 'Avenir', sans-serif;
     font-weight: 400;
     line-height: 23px;
-    text-align: justify;
     background-color: #eff2f5;
 }
 
@@ -142,6 +146,14 @@ body{
 .gallery{
     .wrapper-container{
         max-width: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery{
+        .wrapper-container{
+            padding-top:0px;
+        }
     }
 }
 
@@ -191,8 +203,8 @@ body{
 }
 
 .slick-prev, .slick-next{
-    width:50px;
-    height:50px;
+    width:35px;
+    height:35px;
     z-index: 2;
 
     &::before{
@@ -311,8 +323,8 @@ body{
     font-size:17px;
     line-height: 26px;
     color:white;
-    background-color: $button;
-    border-radius: 25px;
+    background-color: $bg-color;
+    border-radius: 99px;
     padding:17px 70px 13px;
     text-decoration: none;
     text-transform: uppercase;
@@ -320,6 +332,7 @@ body{
 
     &:hover{
         text-decoration: none;
+        background-color:$button
     }
 }
 
@@ -339,7 +352,11 @@ body{
         margin-bottom:20px;
     }
 }
-
+@media only screen and (max-width: 480px) {
+    .grid-2{
+        margin-bottom:20px;
+    }
+}
 .heading-3{
     text-transform: uppercase;
     color:$bg-color;
@@ -391,13 +408,27 @@ body{
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .subscribe{
+        input{
+            margin-bottom:20px;
+        }
+    }
+}
+
 #footer{
     background-color: $bg-color;
     color:white;
     position: fixed;
     bottom:0;
-    width:100%;
+    width:calc(100vw - 30px);
     padding:20px 0;
+
+    .wrapper-container{
+        max-width: none;
+        
+        display: flex;
+    }
 
     .copyright{
         font-size:12px;
@@ -406,14 +437,19 @@ body{
         font-family: "Lato";
         border-left:5px solid white;
         padding:5px 0px 5px 15px;
-        
+        width:50%;
+
         p{
             margin:0;
         }
     }
 
+    .foot-container{
+        width:50%;
+    }
+
     .icon-media{
-        float: right;
+        text-align: right;
 
         img{
             width:16px;
@@ -445,7 +481,7 @@ body{
             z-index: 10;
             background: $bg-color;
             right: 0;
-            top: 84px;
+            top: 60px;
             width: 100%;
 
             &.open{
@@ -466,12 +502,58 @@ body{
     }
 
     .button{
-        padding-left:10px;
-        padding-right:10px;
+        padding-left:20px;
+        padding-right:20px;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    .wrapper{
+        padding-bottom:0;
+    }
+
+    #header{
+        padding:7px 15px 0;
+
+        nav{
+            li{
+                a{
+                    &:hover{
+                        &::after{
+                            background-color:transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #footer{
+        position:relative;
+        width: 100%;
+
+        .wrapper-container{
+            flex-direction: column;
+        }
+
+        .copyright{
+            width: 100%;
+        }
+        .foot-container{
+            width: 100%;
+            display: flex;
+            margin-top:20px;
+            
+            .icon-media{
+                width:40%;
+                text-align: left;
+            }
+            p{
+                width:60%;
+            }
+        }
+    }
+
     .wrapper-container,.container{
         padding:20px 20px;
     }
@@ -479,7 +561,7 @@ body{
     .hamburger{
         display:inline-block;
         color:white;
-        padding:15px 15px 15px 15px;
+        padding:15px 5px 15px 15px;
     }
 
     .logo{
@@ -496,15 +578,20 @@ body{
         .heading-2{
             font-size:30px;
             padding:0 30px;
+            line-height: 34px;
             width:70%;
         }
     }
 
     .slick-prev{
         left:10px;
+        width:20px;
+        height:20px;
     }
     .slick-next{
         right:10px;
+        width:20px;
+        height:20px;
     }
 
     #header .wrapper-container{
@@ -596,29 +683,40 @@ button{
     max-width: none;
     line-height: 0;
     padding-bottom: 50px;
-    height: calc(100vh - 247px);
+    height: calc(100vh - 206px);
     overflow: hidden;
     padding-bottom: 20px;
+    position: relative;
 
     img{
         width:100%; 
+        opacity: 0.5;
     }
 
+    .hero-tagline-container{
+        position: absolute;
+        left:0;
+        top:0; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:calc(100vh - 206px);
+        z-index: 1;
+    }
+
+    
     .hero-tagline{
-        border: 3px solid #ffffff;
         color: #ffffff;
         display: inline-block;
-        font-size: 17px;
+        font-size:30px;
+        line-height: 48px;
+        font-family: "Lato";
         font-weight: 500;
-        line-height: 1.4;
         letter-spacing: 2px;
-        margin-top: 100px;
-        padding: 20px 40px;
-        text-transform: uppercase;
-        position: absolute;
-        left: 50%;
-        margin-left: -260px;
-        top: calc(50vh - 100px);
+        text-transform: capitalize;
+        width:100%;
+        text-align: center;
 
         &.contact-us{
             margin-left: -220px;
@@ -642,12 +740,14 @@ button{
         position: relative;
         padding-bottom:0;
 
+        .hero-tagline-container{
+            margin-top:70px;
+            display: block;
+        }
+
         .hero-tagline{
             font-size: 11px;
             padding: 10px;
-            border: 1px solid #ffffff;
-            top: 0;
-            left: 0;
             margin-left: 3vw;
             width: calc(100vw - 75px);
         }
@@ -710,11 +810,17 @@ button{
     @include background("down-chevron.svg");
     display: block;
     position: absolute;
-    bottom: 105px;
+    bottom: 25px;
     left: 50%;
     margin-left:-10px;
 }
+@media only screen and (max-width: 480px) {
+    .bounce{
+        display: none;
+    }
+}
 /*Areas of practice ends*/
+
 
 /*Publications start*/
 .list-articles{
@@ -742,6 +848,7 @@ button{
             border-bottom:1px solid $brown;
             padding:5px 0 5px 15px;
             margin-bottom:5px;
+            text-align: left;
         }
     }
 

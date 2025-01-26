@@ -87,7 +87,7 @@ figure{margin:0;}
     @if $img == none {
         background: $repeat $scroll $posx $posy $color;
     } @else {
-	    background:url("../images/#{$img}") $repeat $scroll $posx $posy $color;
+	    background:url(".././images/#{$img}") $repeat $scroll $posx $posy $color;
     }
 
 }
