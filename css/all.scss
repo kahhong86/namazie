@@ -319,6 +319,31 @@ body{
     }
 }
 
+.accolades-list{
+    @extend .grid-3;
+    gap:30px;
+    margin-top:0px;
+
+    .item{
+        background: transparent;
+        font-size:14px;
+        border-bottom:3px solid #ad7721;
+        padding: 0 0 30px;
+        font-family: "Avenir-Heavy";
+
+        b{
+            color:$bg-color;
+        }
+    }
+}
+
+.ad{
+    span{
+        display: inline-block;
+        margin-right:30px;
+    }
+}
+
 .button{
     font-size:17px;
     line-height: 26px;
@@ -421,12 +446,13 @@ body{
     color:white;
     position: fixed;
     bottom:0;
-    width:calc(100vw - 30px);
+    width:calc(100% - 30px);
     padding:20px 0;
+    left:15px;
 
     .wrapper-container{
         max-width: none;
-        
+        width:100%;
         display: flex;
     }
 
@@ -474,6 +500,14 @@ body{
         padding:20px 20px;
     }
 
+    
+    .hamburger{
+        display:flex;
+        color:white;
+        padding:15px 5px 15px 15px;
+        align-items: center;
+    }
+
     #header{
         #navigation{
             display: none;
@@ -481,7 +515,7 @@ body{
             z-index: 10;
             background: $bg-color;
             right: 0;
-            top: 60px;
+            top: 58px;
             width: 100%;
 
             &.open{
@@ -558,11 +592,6 @@ body{
         padding:20px 20px;
     }
     
-    .hamburger{
-        display:inline-block;
-        color:white;
-        padding:15px 5px 15px 15px;
-    }
 
     .logo{
         height:50px;
@@ -727,7 +756,7 @@ button{
         }
     
     }
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 480px) {
         .hero-tagline{
             font-size:10px;
         }

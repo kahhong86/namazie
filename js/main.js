@@ -22,7 +22,7 @@ $(document).ready(function(){
             <a href="ip-showcase.html">IP showcase</a>
         </li>
         <li>
-            <a href="#">Accolades</a>
+            <a href="accolades.html">Accolades</a>
         </li>
         <li>
             <a href="publications.html">Publications</a>
