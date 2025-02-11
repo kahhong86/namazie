@@ -14,7 +14,7 @@ $(document).ready(function(){
     })
 
     const mainNavigation = 
-    `<ul>
+    `<ul id="main-nav">
         <li>
             <a href="areas-of-practice.html">Areas of practice</a>
         </li>
@@ -36,4 +36,21 @@ $(document).ready(function(){
     </ul>`
 
     $("#navigation").append(mainNavigation);
+
+    path = window.location.pathname.split("/");
+    for(let i = 0; i < path.length; i++){
+        console.log("finding ",path[i]);
+        if(path[i].includes(".html") == true){
+            console.log("confirmation ",path[i]);
+            $("#main-nav li").each(function(index){
+                let thisNav = $(this).find("a").attr("href");
+                
+                if(thisNav == path[i]){
+                    $(this).addClass("selected");
+                }
+            });
+        }
+    }
+    
+    // console.log($("#main-nav li a").attr('href'));
 });

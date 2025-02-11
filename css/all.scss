@@ -9,11 +9,45 @@ $button:#1e1e59;
 html{
     background-color: $bg-color;
     padding:0 15px; 
+    scroll-behavior: smooth;
 }
-
 @media only screen and (max-width: 480px) {
     html{
         padding:0;
+    }
+}
+
+#top{
+    height: 1px;
+    visibility: hidden;
+}
+
+.visuallyhidden{
+    display:none;
+}
+
+.back-to-top{
+    border-radius: 5px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    display: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 8px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.4;
+    filter: alpha(opacity = 40);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 9999;
+
+    i{
+        margin-top:8px;
     }
 }
 
@@ -39,7 +73,7 @@ html{
 }
 
 .wrapper{
-    padding-bottom:100px;
+    padding-bottom:75px;
 }
 
 p{
@@ -116,6 +150,18 @@ a{
                         display: block;
                     }
                     
+                }
+            }
+
+            &.selected{
+                a{
+                    &::after{
+                        content:" ";
+                        height:4px;
+                        width:100%;
+                        background-color: white;
+                        display: block;
+                    }
                 }
             }
         }
@@ -499,7 +545,6 @@ body{
     .wrapper-container,.container{
         padding:20px 20px;
     }
-
     
     .hamburger{
         display:flex;
@@ -539,6 +584,11 @@ body{
         padding-left:20px;
         padding-right:20px;
     }
+
+    #footer .wrapper-container{
+        padding-left:0;
+        padding-right:0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -565,16 +615,19 @@ body{
     #footer{
         position:relative;
         width: 100%;
+        left:auto;
 
         .wrapper-container{
             flex-direction: column;
+            padding:20px;
+            width:auto;
         }
 
         .copyright{
-            width: 100%;
+            width: auto;
         }
         .foot-container{
-            width: 100%;
+            width: auto;
             display: flex;
             margin-top:20px;
             
@@ -842,6 +895,7 @@ button{
     bottom: 25px;
     left: 50%;
     margin-left:-10px;
+    z-index: 99;
 }
 @media only screen and (max-width: 480px) {
     .bounce{
@@ -884,6 +938,7 @@ button{
     td{
         padding:5px 0 5px 15px;
         font-size:16px;
+        vertical-align: top;
 
         &:first-child{
             @include background("check.jpg",left,8px);
