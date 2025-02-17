@@ -96,7 +96,7 @@ html {
   font-size: 8px;
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 70px;
   opacity: 0.4;
   filter: alpha(opacity=40);
   -webkit-transition: all 0.5s ease;
@@ -108,6 +108,11 @@ html {
   margin-top: 8px;
 }
 
+@media only screen and (max-width: 480px) {
+  .back-to-top {
+    bottom: 20px;
+  }
+}
 .wrapper-container {
   margin: 0 auto;
   max-width: 1140px;
