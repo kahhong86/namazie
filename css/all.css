@@ -496,7 +496,7 @@ body {
   position: fixed;
   bottom: 0;
   width: calc(100% - 30px);
-  padding: 20px 0;
+  padding: 20px 0 22px;
   left: 15px;
 }
 #footer .wrapper-container {
@@ -521,10 +521,14 @@ body {
 }
 #footer .icon-media {
   text-align: right;
+  margin: 0 0 18px;
+}
+#footer .icon-media a {
+  margin: 0 0 0 8px;
 }
 #footer .icon-media img {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 #footer .foot-copy {
   font-size: 10px;

@@ -500,7 +500,7 @@ body{
     position: fixed;
     bottom:0;
     width:calc(100% - 30px);
-    padding:20px 0;
+    padding:20px 0 22px;
     left:15px;
 
     .wrapper-container{
@@ -529,10 +529,15 @@ body{
 
     .icon-media{
         text-align: right;
+        margin:0 0 18px;
+
+        a{
+            margin:0 0 0 8px;
+        }
 
         img{
-            width:16px;
-            height:16px;
+            width:18px;
+            height:18px;
         }
     }
     .foot-copy{
