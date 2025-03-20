@@ -141,7 +141,11 @@ p {
   margin: 0 0 20px;
 }
 p strong {
-  font-family: "Lato";
+  font-family: "Avenir-Heavy";
+}
+
+strong {
+  font-family: "Avenir-Heavy";
 }
 
 ul {
@@ -149,6 +153,9 @@ ul {
 }
 ul li {
   margin-bottom: 10px;
+}
+ul li strong {
+  font-family: "Avenir-Heavy";
 }
 
 a {
