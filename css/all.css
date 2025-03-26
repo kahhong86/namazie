@@ -96,7 +96,7 @@ html {
   font-size: 8px;
   position: fixed;
   right: 20px;
-  bottom: 70px;
+  bottom: 100px;
   opacity: 0.4;
   filter: alpha(opacity=40);
   -webkit-transition: all 0.5s ease;
@@ -322,7 +322,15 @@ body {
 .container {
   padding: 60px 0;
 }
+.container .alt {
+  padding-top: 20px;
+}
 
+@media only screen and (max-width: 480px) {
+  .container.alt {
+    padding: 0;
+  }
+}
 .wig::before, .wig-brown::before {
   width: 200px;
   height: 8px;
@@ -517,7 +525,7 @@ body {
   text-transform: uppercase;
   font-family: "Lato";
   border-left: 5px solid white;
-  padding: 5px 0px 5px 15px;
+  padding: 18px 0px 5px 15px;
   width: 50%;
 }
 #footer .copyright p {
@@ -545,6 +553,11 @@ body {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  #footer .copyright {
+    padding-top: 5px;
+  }
+}
 .hamburger {
   display: none;
 }
@@ -604,6 +617,9 @@ body {
   }
   #header nav li a:hover::after {
     background-color: transparent;
+  }
+  #header nav li.selected a::after {
+    height: 1px;
   }
 
   #footer {
@@ -697,6 +713,11 @@ body {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 480px) {
+  .title-eyebrow.s-alt {
+    margin: 20px 0;
+  }
+}
 .title-item {
   font-size: 14px;
   color: #111134;
@@ -719,6 +740,9 @@ body {
   font-family: "Lato";
   border-bottom: 1px solid #ad7721;
 }
+.title-sub.alt {
+  padding-top: 20px;
+}
 
 .title-name {
   color: #333399;
@@ -726,11 +750,21 @@ body {
   margin: 0 0 20px;
   font-size: 20px;
 }
+.title-name span {
+  display: block;
+  margin-top: 10px;
+}
 
 .img-content {
   display: flex;
   gap: 30px;
   margin-bottom: 50px;
+}
+.img-content.article {
+  border-top: 0;
+}
+.img-content.article .img img {
+  width: 100%;
 }
 
 .col-2 {
@@ -973,5 +1007,9 @@ form .form-field input {
   }
 }
 /*Contact Us end*/
+/*Overwrite styling*/
+.no-margin-bottom {
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=all.css.map */

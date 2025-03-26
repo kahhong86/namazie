@@ -38,7 +38,7 @@ html{
     font-size: 8px;
     position: fixed;
     right: 20px;
-    bottom: 70px;
+    bottom: 100px;
     opacity: 0.4;
     filter: alpha(opacity = 40);
     -webkit-transition: all 0.5s ease;
@@ -301,6 +301,18 @@ body{
 
 .container{
     padding:60px 0;
+
+    .alt{
+        padding-top:20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        &.alt{
+            padding:0;
+        }
+    }
 }
 
 .wig{
@@ -523,7 +535,7 @@ body{
         text-transform: uppercase;
         font-family: "Lato";
         border-left:5px solid white;
-        padding:5px 0px 5px 15px;
+        padding:18px 0px 5px 15px;
         width:50%;
 
         p{
@@ -554,6 +566,12 @@ body{
         text-transform: uppercase;
         text-align: right;
         margin-bottom:0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #footer .copyright{
+        padding-top:5px;
     }
 }
 
@@ -625,6 +643,15 @@ body{
                     &:hover{
                         &::after{
                             background-color:transparent;
+                            
+                        }
+                    }
+                }
+
+                &.selected{
+                    a{
+                        &::after{
+                            height: 1px;
                         }
                     }
                 }
@@ -731,6 +758,14 @@ body{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 480px) {
+    .title-eyebrow{
+        &.s-alt{
+            margin:20px 0;
+        }
+    }
+}
+
 .title-item{
     font-size:14px;
     color:$darkblue;
@@ -751,17 +786,36 @@ body{
     padding-bottom:10px;
     font-family: "Lato";
     border-bottom:1px solid $brown;
+
+    &.alt{
+        padding-top:20px;
+    }
 }
 .title-name{
     color:$bg-color;
     font-family: "Lato";
     margin:0 0 20px;
     font-size:20px;
+    
+    span{
+        display: block;
+        margin-top:10px;
+    }
 }
 .img-content{
     display:flex;
     gap:30px;
     margin-bottom:50px;
+
+    &.article{
+        border-top:0;
+
+        .img{
+            img{
+                width:100%;
+            }
+        }
+    }
 }
 
 .col-2{
@@ -1047,3 +1101,8 @@ form{
     }
 }
 /*Contact Us end*/
+
+/*Overwrite styling*/
+.no-margin-bottom{
+    margin-bottom:0;
+}
