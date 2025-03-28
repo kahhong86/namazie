@@ -219,6 +219,12 @@ a {
   display: block;
 }
 
+@media only screen and (max-width: 480px) {
+  #header nav li.selected a::after {
+    position: relative;
+    top: 10px;
+  }
+}
 .bg-blue {
   background-color: #333399;
   padding: 1px 0;
@@ -765,8 +771,14 @@ body {
 }
 .img-content.article .img img {
   width: 100%;
+  min-width: 400px;
 }
 
+@media only screen and (max-width: 480px) {
+  .img-content.article .img img {
+    min-width: auto;
+  }
+}
 .col-2 {
   display: grid;
   grid-template-columns: auto auto;

@@ -183,6 +183,13 @@ a{
     }
 }
 
+@media only screen and (max-width: 480px) {
+    #header nav li.selected a::after{
+        position: relative;
+        top:10px;
+    }
+}
+
 .bg-blue{
     background-color: $bg-color;
     padding:1px 0;
@@ -813,6 +820,17 @@ body{
         .img{
             img{
                 width:100%;
+                min-width: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .img-content{
+        &.article{
+            .img{
+                img{min-width: auto;}
             }
         }
     }
