@@ -257,8 +257,7 @@ body {
 .slider {
   width: 100%;
   margin: 0px auto;
-  padding-bottom: 50px;
-  height: 80vh;
+  padding-bottom: 20px;
   overflow: hidden;
 }
 .slider .heading-2 {
@@ -285,6 +284,7 @@ body {
 .slick-slide img {
   margin: 0 auto;
   opacity: 0.5;
+  width: 100%;
 }
 .slick-slide div div {
   position: relative;
@@ -440,6 +440,7 @@ body {
 }
 
 .button-brown {
+  font-size: 14px;
   background-color: #ad7721;
 }
 
@@ -482,6 +483,7 @@ body {
   color: white;
   font-size: 26px;
   line-height: 32px;
+  margin-bottom: 40px;
 }
 
 .subscribe .heading-2 {
@@ -494,10 +496,11 @@ body {
   line-height: 23px;
 }
 .subscribe .button-brown {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 30px;
-  padding: 2px 15px;
   border: 0;
+  margin-top: 20px;
+  font-family: "Avenir";
 }
 .subscribe input {
   padding: 10px;
@@ -509,6 +512,9 @@ body {
 @media only screen and (max-width: 480px) {
   .subscribe input {
     margin-bottom: 20px;
+  }
+  .subscribe .button-brown {
+    margin-top: 0;
   }
 }
 #footer {
@@ -562,6 +568,10 @@ body {
 @media only screen and (max-width: 480px) {
   #footer .copyright {
     padding-top: 5px;
+  }
+
+  #footer .icon-media a {
+    margin: 0 8px 0 0;
   }
 }
 .hamburger {
@@ -621,6 +631,9 @@ body {
   #header {
     padding: 7px 15px 0;
   }
+  #header #navigation #main-nav li a {
+    padding: 15px 15px 15px 0;
+  }
   #header nav li a:hover::after {
     background-color: transparent;
   }
@@ -663,7 +676,7 @@ body {
   }
 
   .slider {
-    height: 80vh;
+    padding-bottom: 0;
   }
   .slider img {
     height: 100vh;
@@ -714,14 +727,26 @@ body {
   border: 2px solid #ad7721;
   padding: 10px 20px;
   display: inline-block;
-  margin: 50px 0 50px;
+  margin: 0px 0 20px;
   font-family: "Lato";
   font-weight: bold;
+}
+.title-eyebrow.s-alt {
+  color: #1e1e59;
+  border-color: #1e1e59;
+  text-decoration: none;
+}
+.title-eyebrow.s-alt:hover {
+  color: #ad7721;
+  border-color: #ad7721;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 480px) {
   .title-eyebrow.s-alt {
     margin: 20px 0;
+    display: block;
+    text-align: center;
   }
 }
 .title-item {
@@ -823,7 +848,7 @@ button {
 .gallery-image .hero-tagline {
   color: #ffffff;
   display: inline-block;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 48px;
   font-family: "Lato";
   font-weight: 500;
@@ -855,10 +880,11 @@ button {
     display: block;
   }
   .gallery-image .hero-tagline {
-    font-size: 11px;
-    padding: 10px;
-    margin-left: 3vw;
-    width: calc(100vw - 75px);
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
   }
   .gallery-image .bounce {
     bottom: 10px;
@@ -866,7 +892,7 @@ button {
 }
 .grey-grid {
   gap: 30px;
-  margin: 40px 0;
+  margin: 0px 0 30px;
 }
 .grey-grid .item {
   background: #c2c2c2;
@@ -921,6 +947,10 @@ button {
   .bounce {
     display: none;
   }
+
+  .grey-grid {
+    margin-bottom: 0;
+  }
 }
 /*Areas of practice ends*/
 /*Publications start*/
@@ -960,6 +990,14 @@ button {
 }
 .table td ul li {
   margin-bottom: 5px;
+}
+
+#publications {
+  margin-bottom: 50px;
+  padding: 0;
+}
+#publications .img-content {
+  padding-top: 0;
 }
 
 /*Publications end*/
@@ -1022,6 +1060,15 @@ form .form-field input {
 /*Overwrite styling*/
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .ad {
+    text-align: center;
+  }
+}
+form .button-brown {
+  font-family: "Avenir";
 }
 
 /*# sourceMappingURL=all.css.map */

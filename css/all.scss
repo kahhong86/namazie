@@ -228,8 +228,7 @@ body{
 .slider {
     width: 100%;
     margin: 0px auto;
-    padding-bottom:50px;
-    height:80vh;
+    padding-bottom:20px;
     overflow: hidden;
 
     .heading-2{
@@ -257,7 +256,8 @@ body{
 
     img{
         margin:0 auto;
-        opacity:0.5
+        opacity:0.5;
+        width:100%;
     }
     div{
         div{
@@ -443,6 +443,7 @@ body{
 
 .button-brown{
     @extend .button;
+    font-size:14px;
 
     background-color:$brown;
 }
@@ -486,6 +487,7 @@ body{
         color: white;
         font-size:26px;
         line-height: 32px;
+        margin-bottom:40px;
     }
 }
 
@@ -500,10 +502,11 @@ body{
         line-height: 23px;
     }
     .button-brown{
-        font-size:15px;
+        font-size:14px;
         line-height: 30px;
-        padding:2px 15px;
         border:0;
+        margin-top:20px;
+        font-family: "Avenir";
     }
     input{
         padding:10px;
@@ -517,6 +520,9 @@ body{
     .subscribe{
         input{
             margin-bottom:20px;
+        }
+        .button-brown{
+            margin-top:0;
         }
     }
 }
@@ -579,6 +585,14 @@ body{
 @media only screen and (max-width: 480px) {
     #footer .copyright{
         padding-top:5px;
+    }
+
+    #footer{
+        .icon-media{
+            a{
+                margin:0 8px 0 0;
+            }
+        }
     }
 }
 
@@ -644,6 +658,17 @@ body{
     #header{
         padding:7px 15px 0;
 
+        #navigation{
+            #main-nav{
+                li{
+                    a{
+                        padding:15px 15px 15px 0
+                    }
+                }
+                
+            }
+        }
+
         nav{
             li{
                 a{
@@ -705,7 +730,7 @@ body{
     }
 
     .slider{
-        height:80vh;
+        padding-bottom:0;
 
         img{
             height:100vh;
@@ -760,15 +785,29 @@ body{
     border:2px solid $brown;
     padding:10px 20px;
     display: inline-block;
-    margin:50px 0 50px;
+    margin:0px 0 20px;
     font-family: "Lato";
     font-weight: bold;
+
+    &.s-alt{
+        color:$button;
+        border-color:$button;
+        text-decoration: none;
+
+        &:hover{
+            color:$brown;
+            border-color:$brown;
+            text-decoration: none;
+        }
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .title-eyebrow{
         &.s-alt{
             margin:20px 0;
+            display: block;
+            text-align: center;
         }
     }
 }
@@ -883,7 +922,7 @@ button{
     .hero-tagline{
         color: #ffffff;
         display: inline-block;
-        font-size:30px;
+        font-size:50px;
         line-height: 48px;
         font-family: "Lato";
         font-weight: 500;
@@ -920,10 +959,11 @@ button{
         }
 
         .hero-tagline{
-            font-size: 11px;
-            padding: 10px;
-            margin-left: 3vw;
-            width: calc(100vw - 75px);
+            font-size: 18px;
+            line-height:24px;
+            padding: 10px 0;
+            margin:0;
+            text-align: center;
         }
 
         .bounce{
@@ -934,7 +974,7 @@ button{
 
 .grey-grid{
     gap:30px;
-    margin:40px 0;
+    margin:0px 0 30px;
 
     .item{
         background: #c2c2c2;
@@ -993,6 +1033,9 @@ button{
     .bounce{
         display: none;
     }
+    .grey-grid{
+        margin-bottom:0;
+    }
 }
 /*Areas of practice ends*/
 
@@ -1044,6 +1087,15 @@ button{
                 margin-bottom:5px;
             }
         }
+    }
+}
+
+#publications {
+    margin-bottom:50px;
+    padding:0;
+
+    .img-content{
+        padding-top:0;
     }
 }
 /*Publications end*/
@@ -1123,4 +1175,14 @@ form{
 /*Overwrite styling*/
 .no-margin-bottom{
     margin-bottom:0;
+}
+
+@media only screen and (max-width: 480px) {
+    .ad{
+        text-align:center;
+    }
+}
+
+form .button-brown{
+    font-family: "Avenir";
 }
