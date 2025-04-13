@@ -247,7 +247,14 @@ body{
     }
 
     .slick-list{
-        height:75vh;
+        // height:75vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slider .heading-2{
+        top:50%;
+        font-size:40px;
     }
 }
 
