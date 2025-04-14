@@ -130,7 +130,8 @@ html {
 
 @media only screen and (max-width: 480px) {
   .heading-2 {
-    line-height: 38px;
+    line-height: 29px;
+    font-size: 26px;
   }
 }
 .wrapper {
@@ -360,7 +361,7 @@ body {
   text-align: center;
   font-size: 19px;
   line-height: 30px;
-  margin: 0 0 50px;
+  margin: 0 0 30px;
 }
 .intro strong {
   color: #333399;
@@ -408,6 +409,12 @@ body {
   margin-top: 15px;
 }
 
+@media only screen and (max-width: 480px) {
+  .grid-3 .item .heading-4, .accolades-list .item .heading-4 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
 .accolades-list {
   gap: 30px;
   margin-top: 0px;
@@ -444,6 +451,12 @@ body {
   background-color: #1e1e59;
 }
 
+@media only screen and (max-width: 480px) {
+  .button, .button-brown {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
 .button-brown {
   font-size: 14px;
   background-color: #ad7721;

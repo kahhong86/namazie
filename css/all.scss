@@ -75,7 +75,8 @@ html{
 }
 @media only screen and (max-width: 480px) {
     .heading-2{
-        line-height: 38px;
+        line-height: 29px;
+        font-size:26px;
     }
 }
 
@@ -355,7 +356,7 @@ body{
     text-align: center;
     font-size:19px;
     line-height: 30px;
-    margin:0 0 50px;
+    margin:0 0 30px;
 
     strong{
         color:$bg-color;
@@ -407,6 +408,12 @@ body{
         }
     }
 }
+@media only screen and (max-width: 480px) {
+    .grid-3 .item .heading-4{
+        font-size:24px;
+        line-height: 25px;
+    }
+}
 
 .accolades-list{
     @extend .grid-3;
@@ -447,6 +454,13 @@ body{
     &:hover{
         text-decoration: none;
         background-color:$button
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .button{
+        font-size:14px;
+        padding:12px 20px;
     }
 }
 
