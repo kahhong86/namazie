@@ -334,6 +334,10 @@ body {
   padding-top: 20px;
 }
 
+.default-container {
+  margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 480px) {
   .container.alt {
     padding: 0;
@@ -346,7 +350,6 @@ body {
   content: " ";
   display: block;
   margin: 0 auto 25px;
-  border-radius: 16px;
 }
 
 .wig-brown::before {
@@ -745,6 +748,10 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .title-eyebrow {
+    display: block;
+    text-align: center;
+  }
   .title-eyebrow.s-alt {
     margin: 20px 0;
     display: block;
@@ -949,10 +956,6 @@ button {
   .bounce {
     display: none;
   }
-
-  .grey-grid {
-    margin-bottom: 0;
-  }
 }
 /*Areas of practice ends*/
 /*Publications start*/
@@ -1065,6 +1068,10 @@ form .form-field input {
 }
 
 @media only screen and (max-width: 480px) {
+  .sv-margin-top {
+    margin-top: 20px;
+  }
+
   .ad {
     text-align: center;
   }
