@@ -77,6 +77,7 @@ html{
     .heading-2{
         line-height: 29px;
         font-size:26px;
+        margin-top:0;
     }
 }
 
@@ -232,13 +233,23 @@ body{
     padding-bottom:20px;
     overflow: hidden;
 
+    
+    .center-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:calc(100vh - 227px);
+
+        .heading-2{
+            top:auto;
+            transform:none;
+            left:auto;
+        }
+    }
+
     .heading-2{
         color:white;
-        position: absolute;
-        top: 37vh;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
         font-size:50px;
         margin:20px 0;
         font-weight: 500;
@@ -247,32 +258,32 @@ body{
         text-transform: none;
     }
 
-    .slick-list{
-        // height:75vh;
+    .slick-slide{
+        text-align: center;
+    
+        img{
+            margin:0 auto;
+            position: absolute;
+            opacity:0.5;
+            width:100%;
+            height: calc(100vh - 227px);
+            top:0;
+        }
+        div{
+            div{
+                position: relative;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
     .slider .heading-2{
-        top:50%;
         font-size:40px;
     }
 }
 
-.slick-slide{
-    text-align: center;
 
-    img{
-        margin:0 auto;
-        opacity:0.5;
-        width:100%;
-    }
-    div{
-        div{
-            position: relative;
-        }
-    }
-}
 
 .slick-initialized .slick-slide {
     overflow: hidden;
@@ -314,6 +325,35 @@ body{
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .slider{
+        .slick-slide{
+            height:calc(100vh - 82px);
+
+            img{
+                height:calc(100vh - 82px);
+                width:auto;
+                margin:0 0 0 -115%;
+                position: absolute;
+                top:0;
+            }
+            .center-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:100%;
+                height:calc(100vh - 82px);
+    
+                .heading-2{
+                    top:auto;
+                    transform:none;
+                    left:auto;
+                }
+            }
+        }
+    }
+}
+
 .container{
     padding:60px 0;
 
@@ -341,6 +381,14 @@ body{
         content:" ";
         display: block;
         margin:0 auto 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wig{
+        &::before{
+            margin-bottom:16px;
+        }
     }
 }
 
@@ -409,10 +457,15 @@ body{
     }
 }
 @media only screen and (max-width: 480px) {
-    .grid-3 .item .heading-4{
-        font-size:24px;
-        line-height: 25px;
-    }
+    .grid-3{
+        margin-top:30px;
+        margin-bottom:30px;
+
+        .item .heading-4{
+            font-size:24px;
+            line-height: 25px;
+        }
+    } 
 }
 
 .accolades-list{
@@ -441,12 +494,12 @@ body{
 }
 
 .button{
-    font-size:17px;
+    font-size:14px;
     line-height: 26px;
     color:white;
     background-color: $bg-color;
     border-radius: 99px;
-    padding:17px 70px 13px;
+    padding:9px 52px 9px;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -457,19 +510,24 @@ body{
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .button{
-        font-size:14px;
-        padding:12px 20px;
-    }
-}
-
 .button-brown{
     @extend .button;
     font-size:14px;
 
     background-color:$brown;
 }
+
+@media only screen and (max-width: 480px) {
+    .button{
+        font-size:14px;
+        padding:8px 20px;
+        display: block;
+    }
+    button.button-brown{
+        width:100%;
+    }
+}
+
 
 .grid-2{
     display: grid;
@@ -483,7 +541,7 @@ body{
 }
 @media only screen and (max-width: 480px) {
     .grid-2{
-        margin-bottom:20px;
+        margin-bottom:30px;
     }
 }
 .heading-3{
@@ -491,6 +549,12 @@ body{
     color:$bg-color;
     font-size:20px;
     line-height: 26px;
+}
+
+@media only screen and (max-width: 480px) {
+    .heading-3{
+        margin-bottom: 13px;
+    }
 }
 
 .bg-white{
@@ -513,12 +577,20 @@ body{
         margin-bottom:40px;
     }
 }
+@media only screen and (max-width: 480px) {
+    .bedrunner p{
+        margin-bottom:27px;
+    }
+}
 
 .subscribe{
+    margin-bottom: 20px;
+
     .heading-2{
         font-size:30px;
         line-height: 30px;
         margin-bottom:20px;
+        margin-top:0;
     }
     p{
         font-size:22px;
@@ -540,7 +612,15 @@ body{
 }
 
 @media only screen and (max-width: 480px) {
-    .subscribe{
+    #maincontainer .subscribe{
+        padding:40px;
+        margin-bottom:0px;
+
+        .heading-2{
+            font-size:24px;
+            margin-bottom:10px;
+        }
+
         input{
             margin-bottom:20px;
         }
@@ -627,6 +707,10 @@ body{
     .wrapper-container,.container{
         padding:20px 20px;
     }
+
+    .subscribe{
+        padding:40px;
+    }
     
     .hamburger{
         display:flex;
@@ -679,7 +763,7 @@ body{
     }
 
     #header{
-        padding:7px 15px 0;
+        padding:7px 15px 3px;
 
         #navigation{
             #main-nav{
@@ -754,10 +838,6 @@ body{
 
     .slider{
         padding-bottom:0;
-
-        img{
-            height:100vh;
-        }
 
         .heading-2{
             font-size:30px;
@@ -863,6 +943,17 @@ body{
         padding-top:20px;
     }
 }
+@media only screen and (max-width: 480px) {
+    .title-sub{
+        margin-top:17px;
+        line-height: 22px;
+
+        &.alt{
+            padding-top:0;
+        }
+    }
+}
+
 .title-name{
     color:$bg-color;
     font-family: "Lato";
@@ -893,6 +984,8 @@ body{
 
 @media only screen and (max-width: 480px) {
     .img-content{
+        margin-bottom:17px;
+
         &.article{
             .img{
                 img{min-width: auto;}
@@ -1015,6 +1108,13 @@ button{
         p{
             font-size:16px;
         }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grey-grid .item .title-item{
+        line-height: 19px;
+        font-size:16px;
     }
 }
 
@@ -1146,6 +1246,13 @@ button{
 .col-2{
     &.contact-us{
         grid-template-columns: 2.5fr 1.5fr;
+        font-size:16px;
+
+        table{
+            td{
+                vertical-align: top;
+            }
+        }
     }
 }
 
@@ -1184,11 +1291,12 @@ form{
             flex-direction: column;
             
             label{
-                width:100%;
                 margin:0 0 10px;
+                width:100%;
             }
             input{
-                width:100%;
+                display:block;
+                width:auto;
             }
         }
     }
@@ -1213,4 +1321,53 @@ form{
 
 form .button-brown{
     font-family: "Avenir";
+}
+
+@media only screen and (max-width: 480px) {
+    .alt1{
+        margin-bottom:12px;
+    }
+}
+
+.ipshowcase-grid{
+    gap:10px;
+
+    p{
+        margin-bottom:0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .medium-hide{
+        display: none;
+    }
+}
+
+.name-list{
+    margin-bottom:30px;
+}
+
+@media only screen and (max-width: 480px) {
+    form .form-field .button-label{
+       height: 10px;
+       margin:0;
+    }
+}
+
+.divider{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .divider{
+        display:block;
+        border-top:1px solid #b2b2b2;
+        margin:10px 0 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ip-showcase-container{
+        padding:40px;
+    }
 }
