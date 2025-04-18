@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Namazie-Law</title>
+    <meta name="description" content="An intellectual property, Technology law firm, ipos Singapore"><meta name="keywords" content="ipo,ipo,ipos="" registration="" trademark="" lawyer="" registering="" IP=""
+      trademarks="" registered="" register="" patent="" a="" patents="" and="" ,=""
+      services="" filing="" attorney="" applications="" application="" agent=""
+      ipr="" rights="" property="" intellectual="" right="" laws="" firms="" law=""
+      firm="" in="" design="" license="" registation="" copyright="" protection=">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700italic,700,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css?ver=1.0" type="text/css" media="all" />
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <link rel="stylesheet" href="assets/css/ie.css" type="text/css" media="all" />
+    <![endif]-->
+
+    <!--[if IE 8]><link rel="stylesheet" href="assets/css/ie8.css"><![endif]-->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="mask">
+        <div id="loader"></div>
+    </div>
+    
+	<div id="page">
+		<header class="header">
+			<div class="container-fluid">		
+				<table class="tbl-header" width="100%">
+					<tr>
+						<td width="20%"><a href="index.html"><img src="assets/img/logo.jpg" alt="logo"></a></td>
+						<td width="80%">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="fa fa-bars"></span>
+							</button>
+							
+							<ul id="menu" class="menu">
+
+								<li><a href="areaofpractice.html">areas of practice</a></li>
+								<li>
+									<a href="ipshowcase.html">ip showcase</a>
+									<ul class="submenu">
+										<li><a href="ipshowcase-copyright.html">COPYRIGHT SHOWCASE</a></li>
+										<li><a href="ipshowcase-patent.html">PATENTS SHOWCASE</a></li>
+										<li><a href="ipshowcase-design.html">DESIGNS SHOWCASE</a></li>
+										<li><a href="ipshowcase-trademarks.html">TRADEMARKS SHOWCASE</a></li>
+									</ul>								
+								</li>
+								<li><a href="accolades.html">accolades</a></li>
+								<li class="active"><a href="publications-and-presentations.html">publications</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+								<li><a href="contact.html">contact</a></li>
+							</ul>
+						</td>
+					<tr>
+				</table>
+			</div>
+		</header><!-- end .header -->
+		
+	   <div id="hero" class="fadein">
+			<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+					<div class="active item">
+						<img src="assets/img/slideresponsive/p&p.jpg" class="hidden-xs" alt="">
+						<img src="assets/img/slideresponsive/p&p-sm.jpg" class="visible-xs-block" alt="">
+					</div>				
+				</div>
+			</div>   
+			<div class="hero-tagline">
+				<div>You Create Your Assets. We Protect Them.</div>
+			</div>		
+
+			<div class="arrow bounce"></div>			
+		</div><!-- end #hero -->
+		
+		<div id="main">
+			<div class="container">
+				<div id="content">
+					<h1 class="heading2" style="text-align:left">
+						Publications <span>& Presentations</span>
+					</h1>
+
+					
+					<div>
+						<p><strong>Namazie & Co.</strong> is often invited to publish in various international and local publications. We also conduct presentations to various organisations and clients on the development of Intellectual and Technology law.</p> 
+
+						<p>Through our publications and presentations, we hope to offer our clients and the public at large an insight into the trends and developments in the various fields of intellectual property rights.</p>  
+
+						<p>Some of our publications are provided below.</p> 
+
+						<br>
+					
+						<div class="row">
+							<div class="col-md-2">
+								<a href="#publications" class="btn-border">PUBLICATIONS</a>
+							</div>
+							<div class="col-md-2">
+								<a href="#presentations" class="btn-border">PRESENTATIONS</a>
+							</div>				
+						</div>
+
+						<br><br>
+
+						<div id="publications">
+							<h3>PUBLICATIONS</h3>
+						
+							<div class="table-heading">
+								<img src="assets/img/ip-compass.jpg" alt="">
+								<div class="line"></div>
+							</div>
+							
+							<div class="table">
+							  <table>
+							    <tbody>
+								    <tr>
+								      <td><a href="docs/IP COMPASS DESIGNS JULY 2016.pdf" target="_blank">IP Compass® – An Innovation-Driven Singapore Through Designs</a></td>
+								      <td>JULY 2016</td>
+							      </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2014- III.pdf" target="_blank">IP Compass® – ASEAN TM View</a></td>
+								      <td>OCT 2014</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2014 - II.pdf" target="_blank">IP Compass® – The concept of Initial Interest Confusion in Singapore</a></td>
+								      <td>JUL 2014</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2014- I.pdf" target="_blank">IP Compass® – Amendments to Patent Act & Rules</a></td>
+								      <td>FEB 2014</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2012-II.pdf" target="_blank">IP Compass® – Further Support for Technology Start Ups in Singapore</a></td>
+								      <td>SEP 2012</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2011.pdf" target="_blank">IP Compass® – ACTA – Anti-Counterfeiting Trade Agreement </a></td>
+								      <td>OCT 2011</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2010.pdf" target="_blank">IP Compass® – Creative Commons – What it is and How to use it; Clearing the Way: Copyright and Licenses</a></td>
+								      <td>DEC 2010</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2009.pdf" target="_blank">IP Compass® – Registered Design Rights in Singapore</a></td>
+								      <td>MAR 2009</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2006.pdf" target="_blank">IP Compass® – Protecting IPR in ASIA</a></td>
+								      <td>DEC 2006</td>
+							        </tr>
+								    <tr>
+								      <td><a href="docs/IP COMPASS 2003.pdf" target="_blank">IP Compass® – USSFTA Changes on the Horizon</a></td>
+								      <td>SEP 2003</td>
+							        </tr>
+						        </tbody>
+							  </table>
+								<p>&nbsp;</p>
+								<p>&nbsp;</p>
+						  </div>
+							
+							<div class="table-heading">
+								<h4>The Intellectual Property Review (Singapore Chapter)</h4>
+								<div class="line"></div>
+								<p>The Intellectual Property Review, published by Law Business Research Ltd., is a compilation of recent developments of intellectual property law in various jurisdictions, intended to serve as a guide to practitioners around the world. Namazie & Co. provided the Singapore chapter for the following editions. </p>
+							</div>
+							
+							<div class="table">
+								<table>
+									<tbody>
+										<tr>
+											<td><a href="docs/The Intellectual Property Review Singapore Chapter 2015.pdf" target="_blank">The Intellectual Property Review 4th Edition</a></td>
+											<td>2015</td>
+										</tr>	
+										<tr>
+											<td><a href="docs/The Intellectual Property Review Singapore Chapter 2014.pdf" target="_blank">The Intellectual Property Review 3rd Edition</a></td>
+											<td>2014</td>
+										</tr>
+										<tr>
+											<td><a href="docs/The Intellectual Property Review Singapore Chapter 2013.pdf" target="_blank">The Intellectual Property Review 2nd Edition</a></td>
+											<td>2013</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="table-heading">
+								<h4>Other Publications</h4>
+								<div class="line"></div>
+							</div>
+
+							<div class="table">
+								<table>
+									<tbody>
+										<tr>
+											<td>Hijacking Thwarted on Appeal</td>
+											<td>Managing Intellectual Property (Publication)</td>
+											<td>June 2002</td>
+										</tr>	
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<br>
+						
+						<div id="presentations">
+							<h3>PRESENTATIONS</h3>
+							
+							<div class="table">
+								<table>
+									<thead>
+										<tr>
+											<th width="60%">TITLE</th>
+											<th width="40%">Organisation</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><strong>Managing Technology Assets</strong></td>
+											<td>Singapore Institute of Management (SIM)</td>
+										</tr>	
+										<tr>
+											<td><strong>Trademark Management Course</strong></td>
+											<td>Singapore Institute of Management (SIM)</td>
+										</tr>
+										<tr>
+											<td><strong>Copyright Concerns in Cyberspace</strong></td>
+											<td>THC – Online IT Law Conference</td>
+										</tr>
+										<tr>
+											<td><strong>Protection of IP Rights in Cyberspace</strong></td>
+											<td>IQPC – IT Law Conference</td>
+										</tr>
+										<tr>
+											<td><strong>Net Intellectual Property Protection Seminar</strong></td>
+											<td>THC – In House Counsel</td>
+										</tr>
+										<tr>
+											<td><strong>Management & Protection of Technology Assets</strong></td>
+											<td>Exploit Technologies</td>
+										</tr>
+										<tr>
+											<td><strong>Series of seminars on IPR</strong></td>
+											<td>Centre for Innovation & Entrepreneurship</td>
+										</tr>
+										<tr>
+											<td><strong>Managing your Technology Assets</strong></td>
+											<td>Flextronics Design Asia</td>
+										</tr>
+										<tr>
+											<td><strong>Taking your IPR Outside the Company (Exploitation of IPR)</strong></td>
+											<td>Flextronics Design Asia</td>
+										</tr>
+										<tr>
+											<td><strong>Brand Selection & Management; IP Awareness Sessions</strong></td>
+											<td>Citigate Suyeang</td>
+										</tr>
+										<tr>
+											<td><strong>Different Forms of Electronic Contracts</strong></td>
+											<td>Electronic Agreements ’06 Conference</td>
+										</tr>
+										<tr>
+											<td><strong>Protecting Intellectual Property in Asia</strong></td>
+											<td>Swiss Business Association</td>
+										</tr>
+										<tr>
+											<td><strong>Intellectual Property Rights in Asia Pacific</strong></td>
+											<td>Singapore Business Federation</td>
+										</tr>
+										<tr>
+											<td><strong>Protecting Intellectual Property in Asia</strong></td>
+											<td>Rotary Club of Singapore</td>
+										</tr>
+										<tr>
+											<td><strong>Electronic Commerce, Contracts and Procurement</strong></td>
+											<td>E Procurement Conference</td>
+										</tr>
+										<tr>
+											<td><strong>Using Design Protection as an IP Tool</strong></td>
+											<td>Design Singapore Council, Ministry of Communication and the Arts (MICA)</td>
+										</tr>
+										<tr>
+											<td><strong>Optimising Intellectual Property – An Entrepreneur’s Guide</strong></td>
+											<td>Primetime – Business and Professional Women’s Association</td>
+										</tr>
+										<tr>
+											<td><strong>
+											  Annual Foreign guest lecturer from 1998 to 2002 at 
+												IP Practitioners course for students from APEC countries, 
+												subjects including:
+												</strong>
+											  <ul>											
+												  <li><strong>Copyright infringements</strong></li>
+												  <li><strong>Patent infringements</strong></li>
+												  <li><strong>Trademark infringements</strong></li>
+												  <li><strong>ADR in Intellectual Property disputes</strong></li>
+												  <li><strong>Trademark Copyright & Patent Laws in South East Asia</strong></li>
+												  <li><strong>The problem of counterfeiting</strong></li>
+												</ul>											
+											</td>
+											<td>Japan Institute of Invention & Innovation</td>
+										</tr>									
+									</tbody>
+								</table>
+							</div>
+						</div>	
+
+						<div class="note">If you would like us to structure a presentation for your organization, please contact us at <a href="mailto:general@namazie-law.com">general@namazie-law.com</a> and provide us with the necessary details.</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end #main -->	
+		
+		<footer class="footer">
+			<div class="container-fluid">
+				<table class="tbl-footer" width="100%">
+					<tr>
+						<td width="50%">
+							<div class="slogan">An Intellectual Property & Technology Law Firm</div>
+						</td>
+						<td width="50%" class="text-right">
+							<div class="socials">
+								<a href="https://www.facebook.com/Namazie.Co" target="_blank"><img src="assets/img/facebook.png" alt=""></a>
+								<a href="https://www.linkedin.com/company/namazie-&-co." target="_blank"><img src="assets/img/linkedin.png" alt=""></a>
+							</div>
+							<div class="copyright">Copyright © 2016 Namazie & Co.</div>
+						</td>
+					</tr>
+				</table>        
+			</div>
+		</footer><!-- end .footer -->
+	</div>
+	
+    <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+
+    <!--[if lt IE 9]>  
+        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+        <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js?ver=1"></script>
+    <!--<![endif]-->  
+
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.matchHeight.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+</body>
+</html>

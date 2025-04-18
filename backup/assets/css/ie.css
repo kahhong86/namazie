@@ -1,0 +1,13 @@
+
+.navbar-default .navbar-nav {
+	float: right;
+	display: inline-block;
+}
+.navbar-default .navbar-nav li.dropdown { 
+	float: left;
+	display: inline-block;
+}
+.list-menu-product .col-sm-4 { 
+	float: left;
+	display: inline-block;
+}

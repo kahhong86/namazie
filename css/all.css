@@ -340,10 +340,10 @@ body {
 
 @media only screen and (max-width: 480px) {
   .slider .slick-slide {
-    height: calc(100vh - 82px);
+    height: calc(100vh - 182px);
   }
   .slider .slick-slide img {
-    height: calc(100vh - 82px);
+    height: calc(100vh - 182px);
     width: auto;
     margin: 0 0 0 -115%;
     position: absolute;
@@ -354,7 +354,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 182px);
   }
   .slider .slick-slide .center-box .heading-2 {
     top: auto;
@@ -1228,6 +1228,29 @@ form .button-brown {
 @media only screen and (max-width: 480px) {
   .ip-showcase-container {
     padding: 40px;
+  }
+}
+#thank-you {
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 480px) {
+  #thanks {
+    width: calc(100vw - 40px);
+    overflow: hidden;
+    height: calc(100vh - 230px);
+    border: 0;
+  }
+  #thanks .thanks-container {
+    width: 1500px;
+  }
+  #thanks .hero-tagline-container {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 192px);
   }
 }
 
