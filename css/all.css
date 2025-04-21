@@ -954,7 +954,7 @@ button {
   color: #ffffff;
   display: inline-block;
   font-size: 50px;
-  line-height: 48px;
+  line-height: 53px;
   font-family: "Lato";
   font-weight: 500;
   letter-spacing: 2px;
@@ -967,6 +967,12 @@ button {
 }
 .gallery-image .hero-tagline span {
   color: #333399;
+}
+.gallery-image .hero-tagline a.home-link {
+  font-size: 15px;
+  display: block;
+  text-decoration: underline;
+  color: white;
 }
 @media only screen and (max-width: 480px) {
   .gallery-image .hero-tagline {
