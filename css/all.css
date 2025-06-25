@@ -10,6 +10,11 @@
   font-family: Avenir-Black;
   src: url(../font/avenir-font/AvenirLTStd-Black.otf);
 }
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXiWtFCc.woff2") format("woff2");
+  font-display: swap;
+}
 body {
   font-family: "Lato", Arial;
   font-size: 14px;
@@ -76,8 +81,10 @@ html {
   }
 }
 #top {
-  height: 1px;
+  height: 0;
+  display: block;
   visibility: hidden;
+  overflow: hidden;
 }
 
 .visuallyhidden {
@@ -953,7 +960,7 @@ button {
 .gallery-image .hero-tagline {
   color: #ffffff;
   display: inline-block;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 53px;
   font-family: "Lato";
   font-weight: 500;
@@ -1144,20 +1151,32 @@ button {
   }
 }
 form .form-field {
-  display: flex;
   margin: 0 0 20px;
   padding: 0 50px 0 0;
 }
 form .form-field label {
+  width: 100%;
+  display: flex;
+}
+form .form-field .label {
   width: 25%;
   position: relative;
   top: 7px;
+  display: inline-block;
 }
-form .form-field input {
+form .form-field input, form .form-field textarea {
   width: 75%;
   font-family: "Lato";
   font-size: 18px;
   padding: 5px;
+}
+form .form-field textarea {
+  min-height: 100px;
+}
+form .form-field .error {
+  color: red;
+  font-size: 0.9em;
+  padding-left: 25%;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1168,10 +1187,19 @@ form .form-field input {
   form .form-field label {
     margin: 0 0 10px;
     width: 100%;
+    flex-direction: column;
+    gap: 4px;
+  }
+  form .form-field label .label {
+    display: block;
+    margin-bottom: 4px;
   }
   form .form-field input {
     display: block;
     width: auto;
+  }
+  form .form-field .error {
+    padding-left: 0;
   }
 }
 /*Contact Us end*/
@@ -1255,9 +1283,15 @@ form .button-brown {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
+    padding: 0 20px;
     height: calc(100vh - 192px);
   }
+}
+.error-msg {
+  width: 16px;
+  position: relative;
+  top: 4px;
 }
 
 /*# sourceMappingURL=all.css.map */

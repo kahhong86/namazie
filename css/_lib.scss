@@ -11,6 +11,11 @@
     font-family: Avenir-Black;
     src: url(../font/avenir-font/AvenirLTStd-Black.otf);
 }
+@font-face {
+  font-family: 'Lato';
+  src: url('https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXiWtFCc.woff2') format('woff2');
+  font-display: swap;
+}
 
 body{
 	font-family:"Lato",Arial;

@@ -92,9 +92,9 @@
           <div class="carousel-inner">
             <div class="active item"> <img src="assets/img/slideresponsive/p&amp;p.jpg"
 
-                class="hidden-xs" alt=""> <img src="assets/img/slideresponsive/p&amp;p-sm.jpg"
+                class="hidden-xs" alt="images alt"> <img src="assets/img/slideresponsive/p&amp;p-sm.jpg"
 
-                class="visible-xs-block" alt=""> </div>
+                class="visible-xs-block" alt="images alt"> </div>
           </div>
         </div>
         <div class="hero-tagline">
@@ -131,7 +131,7 @@
                 <h3>PUBLICATIONS</h3>
                 <div class="table-heading"> <img src="assets/img/ip-compass.jpg"
 
-                    alt="">
+                    alt="images alt">
                   <div class="line"></div>
                 </div>
                 <div class="table">
@@ -387,10 +387,10 @@
                 <td class="text-right" width="50%">
                   <div class="socials"> <a href="https://www.facebook.com/Namazie.Co"
 
-                      target="_blank"><img src="assets/img/facebook.png" alt=""></a>
+                      target="_blank"><img src="assets/img/facebook.png" alt="images alt"></a>
                     <a href="https://www.linkedin.com/company/namazie-&amp;-co."
 
-                      target="_blank"><img src="assets/img/linkedin.png" alt=""></a>
+                      target="_blank"><img src="assets/img/linkedin.png" alt="images alt"></a>
                   </div>
                   <div class="copyright">Copyright © 2016 Namazie &amp; Co.</div>
                 </td>
